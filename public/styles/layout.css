@@ -28,3 +28,10 @@ body {
 span {
   font-family: Bungee;
  }
+
+main {
+  background-color: #f4f1ec;
+  text-align: center;
+  width: 90vw;
+  margin: 1em auto;
+}

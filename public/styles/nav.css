@@ -1,0 +1,35 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100vw; 
+  height: 120px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span.title {
+  font-family: Bungee; 
+  font-size: 2em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+}
+
+div.newTweetHeader { 
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span.slogan {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+}
+
+.fa-solid, .fas {
+  color: #d9d9d9;
+}

@@ -1,0 +1,43 @@
+form {
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.type {
+  width: 90vw;
+  background-color: #f4f1ec;
+  border-top: hidden;
+  border-left: hidden;
+  border-right: hidden;
+  outline: none;
+  resize: none;
+  border-bottom: 0.20em solid #545149;
+  font-family: "Source Sans Pro";
+}
+
+.submission {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+  font-family: Bungee;
+}
+
+button {
+  background-color: #4056A1;
+  border: 0px;
+  color: #FFFFFF;
+  padding: 0.15em;
+  margin: 0.75em 0em;
+}
+
+.counter {
+  padding: 0.15em;
+  margin: 0.75em 0em;
+}
+
+.counter.negative {
+  color: red;
+}

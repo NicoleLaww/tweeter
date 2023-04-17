@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css"/>
     <link rel="stylesheet" href="/styles/header.css" type="text/css"/>
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/old-tweet.css" type="text/css"/>
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -34,7 +35,7 @@
         <i class="fa-sharp fa-solid fa-angles-down"></i>
       </div> 
     </nav>
-    <header>
+    <header class="profileSection">
       <div class="userIcon">
         <div class="verticalIcon">
           <img src="/images/profile-hex.png"> 
@@ -44,7 +45,7 @@
     </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    <main>
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets/">
@@ -57,7 +58,27 @@
             <output name="counter" class="counter" for="tweet-text"><strong>140</strong></output>
           </div>
         </form>
-</section>
+      </section>
+
+      <article class="tweet-container">
+        <header class="tweet-header">
+          <span class="left-container">
+            <span class="userImg">IMG</span>
+            <span class="userName">Nicole</span>
+          </span>
+          <span class="userId">@NicoleLaw2</span>
+        </header>
+        <p class="tweetInfo">Hi!! This is my first tweet.</p>
+        <footer class="tweet-footer">
+          <span class="date">1 day ago</span>
+          <span class="interaction">
+            <i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-heart"></i>
+          </span>
+        </footer>
+      </article>
+
     </main>
   </body>
 </html>

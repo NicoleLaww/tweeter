@@ -1,0 +1,80 @@
+.tweet-container {
+  border: 0.2em solid #545149;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-container:hover {
+  box-shadow: 0.5em 0.5em rgb(180, 180, 180);
+}
+
+.tweet-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tweetInfo {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: flex-start;
+  border-bottom: 0.2em solid #545149;
+  padding: 0.75em;
+  font-family: "Source Sans Pro"; 
+  font-weight: bold;
+}
+
+.userId {
+  font-family: "Source Sans Pro";
+  font-weight: bold;
+  color: rgb(180, 180, 180)
+}
+
+.userName {
+  font-family: "Source Sans Pro";
+}
+
+.userImg {
+  padding: 0.5em;
+}
+
+.tweet-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: small;
+}
+
+.date {
+  font-family: "Source Sans Pro";
+  font-size: medium;
+  font-weight: normal;
+}
+
+i.fa-solid.fa-heart {
+    color: #4056A1;
+    font-size: 1.5em;
+}
+
+i.fa-solid.fa-heart:hover {
+    color: #545149;
+}
+
+i.fa-solid.fa-retweet {
+    color: #4056A1;
+    font-size: 1.5em;
+}
+
+i.fa-solid.fa-retweet:hover {
+    color: #545149;
+}
+
+i.fa-solid.fa-flag {
+    color: #4056A1;
+    font-size: 1.5em;
+}
+
+i.fa-solid.fa-flag:hover {
+    color: #545149;
+}

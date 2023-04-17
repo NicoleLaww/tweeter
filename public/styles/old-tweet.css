@@ -13,6 +13,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .tweetInfo {
@@ -37,6 +45,8 @@
 
 .userImg {
   padding: 0.5em;
+  width: 8vw;
+  height: auto;
 }
 
 .tweet-footer {

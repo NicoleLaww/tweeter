@@ -6,7 +6,7 @@
 
 $(document).ready(() => {
   
-let start = Date.now();
+// let start = Date.now();
 
 //creates tweetbox template
   const createTweetElement = (tweet) => {
@@ -44,7 +44,7 @@ let start = Date.now();
 //creates tweet box for each tweet
   const renderTweets = (data) => {
     tweetsContainer.empty();
-    console.log("Date.now", Date.now() - start);
+    // console.log("Date.now", Date.now() - start);
 
     data.forEach((tweet) => {
       tweetsContainer.append(createTweetElement(tweet));
@@ -74,8 +74,16 @@ let start = Date.now();
 //submit new tweet
   $("form").submit((event) => {
     event.preventDefault();
-    submitNewTweet(textArea);
-    console.log(start);
+    if (textArea.val() === null || textArea.val() === "") {
+      return alert("Invalid submission.");
+    } else if (textArea.val().length > 140) {
+      return alert("Invalid submission. Please try again.");
+    } else if (textArea.val().trim() === "") {
+      return alert("Invalid. Too many white spaces.");
+    } else {
+      submitNewTweet(textArea);
+      // console.log(start);
+    }
   });
 
 //function that gets all the tweets and renders them into the little boxes

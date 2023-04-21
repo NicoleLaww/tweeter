@@ -41,3 +41,22 @@ button {
 .counter.negative {
   color: red;
 }
+
+.errorContainer {
+  color: red;
+}
+
+.error {
+  border-width: 90vw;
+  border: 0.15em solid red; 
+  padding: 0.5em;
+}
+
+.message {
+  font-family: "Source Sans Pro";
+}
+
+.fa-solid, .fa-triangle-exclamation {
+  color: red;
+  padding: 0.1em;
+}

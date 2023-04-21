@@ -77,16 +77,31 @@ $(document).ready(() => {
     $.ajax(config);
   };
 
+//error message
+  const createErrorMessage = (message) => {
+    return `
+      <p class="error">
+        <i class="fa-solid fa-triangle-exclamation"></i></span>
+        <span class="message">${message}</span>
+        <i class="fa-solid fa-triangle-exclamation"></i>
+      </p>
+    `;
+  };
+
 //submit new tweet
   $("form").submit((event) => {
     event.preventDefault();
     if (textArea.val() === null || textArea.val() === "") {
-      return alert("Invalid submission.");
+      const errorMsg = createErrorMessage("Invalid submission");
+      $(".errorContainer").html(errorMsg).slideDown();
     } else if (textArea.val().length > 140) {
-      return alert("Invalid submission. Please try again.");
+      const errorMsg = createErrorMessage("Invalid submission. Please try again.");
+      $(".errorContainer").html(errorMsg).slideDown();
     } else if (textArea.val().trim() === "") {
-      return alert("Invalid. Too many white spaces.");
+      const errorMsg = createErrorMessage("Invalid. Too many white spaces.");
+      $(".errorContainer").html(errorMsg).slideDown();
     } else {
+      $(".errorContainer").hide();
       submitNewTweet(textArea);
       // console.log(start);
     }

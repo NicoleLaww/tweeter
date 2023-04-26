@@ -1,0 +1,52 @@
+@media only screen and (min-width: 1024px)  {
+  body {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 150px;
+  width: 100vw;
+  }
+
+  #bodyContainer {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 2em;
+    padding: 0 2em;
+    width: 91vw;
+  }
+
+  #contentContainer {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 45vw;
+    margin: 1em 0 2em 0;
+    padding: 0 1.5em;
+  }
+
+  .form {
+    overflow: hidden;
+  }
+
+  .userIcon {
+    max-width: 30vw;
+    max-height: 35vh;
+  }
+
+  .profileSection {
+    max-width: 30vw;
+    max-height: 45vh;
+    margin: 1.5em;
+  } 
+
+  main, .type, .tweet-container, .form, .tweets-container, .submission {
+    width: 39vw;
+    overflow: hidden;
+  }
+
+
+
+  }
+

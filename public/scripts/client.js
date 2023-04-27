@@ -5,8 +5,6 @@
  */
 
 $(document).ready(() => {
-  
-// let start = Date.now();
 
 //creates tweetbox template
   const createTweetElement = (tweet) => {
@@ -50,7 +48,6 @@ $(document).ready(() => {
 //creates tweet box for each tweet
   const renderTweets = (data) => {
     tweetsContainer.empty();
-    // console.log("Date.now", Date.now() - start);
     data.reverse();
     data.forEach((tweet) => {
       tweetsContainer.append(createTweetElement(tweet));
@@ -69,6 +66,7 @@ $(document).ready(() => {
         console.log("Successfully submitted", tweet);
         loadTweets();
         textArea.val("");
+
       },
       error: (error) => {
         console.log("Error", error);
@@ -103,7 +101,7 @@ $(document).ready(() => {
     } else {
       $(".errorContainer").hide();
       submitNewTweet(textArea);
-      // console.log(start);
+      $(".counter").val(140);
     }
   });
 

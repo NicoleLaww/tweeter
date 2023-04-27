@@ -1,6 +1,15 @@
 # Tweeter Project
 A simple, single-page Twitter clone.
 
+## Final Product 
+
+### Desktop 
+!["Desktop"](https://github.com/NicoleLaww/tweeter/blob/master/docs/desktop.jpeg)
+!["Desktop Error Message"](https://github.com/NicoleLaww/tweeter/blob/master/docs/errorMessageDesktop.jpeg)
+
+### Mobile 
+!["Mobile"](https://github.com/NicoleLaww/tweeter/blob/master/docs/mobile.jpeg)
+!["Mobile Error Message"](https://github.com/NicoleLaww/tweeter/blob/master/docs/errorMessageMobile.jpeg)
 
 ## Getting Started
 1. Fork this repository.

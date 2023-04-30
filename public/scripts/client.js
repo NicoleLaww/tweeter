@@ -43,7 +43,7 @@ $(document).ready(() => {
     </div>
   `;
   };
-  const tweetsContainer = $(".tweets-container");
+  const tweetsContainer = $("#tweets-container");
 
 //creates tweet box for each tweet
   const renderTweets = (data) => {
@@ -91,17 +91,17 @@ $(document).ready(() => {
     event.preventDefault();
     if (textArea.val() === null || textArea.val() === "") {
       const errorMsg = createErrorMessage("Invalid submission");
-      $(".errorContainer").html(errorMsg).slideDown();
+      $("#errorContainer").html(errorMsg).slideDown();
     } else if (textArea.val().length > 140) {
       const errorMsg = createErrorMessage("Invalid submission. Please try again.");
-      $(".errorContainer").html(errorMsg).slideDown();
+      $("#errorContainer").html(errorMsg).slideDown();
     } else if (textArea.val().trim() === "") {
       const errorMsg = createErrorMessage("Invalid. Too many white spaces.");
-      $(".errorContainer").html(errorMsg).slideDown();
+      $("#errorContainer").html(errorMsg).slideDown();
     } else {
-      $(".errorContainer").hide();
+      $("#errorContainer").hide();
       submitNewTweet(textArea);
-      $(".counter").val(140);
+      $("#counter").val(140);
     }
   });
 

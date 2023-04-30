@@ -38,7 +38,7 @@
         <i class="fa-sharp fa-solid fa-angles-down"></i>
       </div> 
     </nav>
-    <div id="bodyContainer">
+    <div class="bodyContainer">
       <header class="profileSection">
         <div class="userIcon">
           <div class="verticalIcon">
@@ -49,10 +49,10 @@
       </header>
 
     <!-- Page-specific (main) content here -->
-    <div id="contentContainer"> 
+    <div class="contentContainer"> 
       <main>
           <section class="new-tweet">
-            <header class="errorContainer">
+            <header class="errorContainer" id="errorContainer">
             </header>
             <form method="POST" action="/tweets/">
               <label for="tweet-text">
@@ -61,11 +61,11 @@
               <textarea class="type" name="text" id="tweet-text"></textarea>
               <div class="submission">
                 <button type="submit">Tweet</button>
-                <output name="counter" class="counter" for="tweet-text"><strong>140</strong></output>
+                <output name="counter" class="counter" id="counter" for="tweet-text"><strong>140</strong></output>
               </div>
             </form>
           </section>
-          <article class="tweets-container">
+          <article class="tweets-container" id="tweets-container">
           </article>
         </main>
       </div> 
